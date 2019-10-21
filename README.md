@@ -39,7 +39,18 @@ With *window* = 32:
 
 ## Citation
 
-If our codes are helpful for your research, please cite our paper.
+If our codes are helpful for your research, please cite our paper:
+
+```
+@inproceedings{Huang2019DSANet,
+  author = {Huang, Siteng and Wang, Donglin and Wu, Xuehan and Tang, Ao},
+  title = {DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting},
+  booktitle = {The 28th ACM International Conference on Information and Knowledge Management (CIKM ’19)},
+  month = {November},
+  year = {2019},
+  address = {Beijing, China}
+}
+```
 
 ACM Reference Format: 
 
