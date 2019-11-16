@@ -1,16 +1,33 @@
+# project
+.DS_Store
+run_configs/
+test_tube_logs/
+test_tube_data/
+datasets/
+model_weights/
+app/models/
+pip-wheel-metadata/
+test_tube_exp/
+tests/tests_tt_dir/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-*.swp
+example.py
+timit_data/
+LJSpeech-1.1/
 
 # C extensions
 *.so
 
+.idea/
+
 # Distribution / packaging
 .Python
 env/
+ide_layouts/
 build/
 develop-eggs/
 dist/
@@ -102,6 +119,5 @@ ENV/
 # mypy
 .mypy_cache/
 
-.DS_Store
-log/
-data/
+# data
+mnist/

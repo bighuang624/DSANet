@@ -1,0 +1,9 @@
+scikit-learn==0.20.2
+tqdm>=4.32.1
+numpy==1.16.4
+torch>=1.1.0
+torchvision>=0.3.0
+pandas>=0.20.3
+
+test-tube>=0.6.9
+pytorch-lightning>=0.4.6

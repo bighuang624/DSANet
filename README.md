@@ -1,57 +1,48 @@
 # Dual Self-Attention Network for Multivariate Time Series Forecasting
 
-**We are reorganizing the code. The code will be released soon.**
-
-This project is the code of the paper "[DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting]()", in which we propose a dual self-attention network (DSANet) for multivariate time series forecasting. The network architecture is illustrated in the following figure, and more details about the effect of each component can be found in the paper.
+This project is the PyTorch implementation of the paper "[DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting](https://dl.acm.org/citation.cfm?doid=3357384.3358132)", in which we propose a dual self-attention network (DSANet) for multivariate time series forecasting. The network architecture is illustrated in the following figure, and more details about the effect of each component can be found in the paper.
 
 ![](https://raw.githubusercontent.com/bighuang624/DSANet/master/docs/DSANet-model-structure.png)
 
 ## Requirements
 
 * Python 3.5 or above
-* PyTorch
+* PyTorch 1.1 or above
+* pytorch-lightning
 
-## Results
+## How to run
 
-### Evaluation Results
+You need to prepare the dataset first. Check [here](https://github.com/bighuang624/DSANet/blob/master/data/README.md).
 
-With *window* = 32:
+```bash
+# clone project
+git clone https://github.com/bighuang624/DSANet.git
 
-![](https://raw.githubusercontent.com/bighuang624/DSANet/master/docs/exp_results_window_32.png)
+# install dependencies
+cd DSANet
+pip install requirements.txt
 
-With *window* = 64:
+# run
+python single_cpu_trainer.py --data_name {data_name} --n_multiv {n_multiv}
+```
 
-![](https://raw.githubusercontent.com/bighuang624/DSANet/master/docs/exp_results_window_64.png)
-
-With *window* = 128:
-
-![](https://raw.githubusercontent.com/bighuang624/DSANet/master/docs/exp_results_window_128.png)
-
-### Ablation Study
-
-With *window* = 32:
-
-![](https://raw.githubusercontent.com/bighuang624/DSANet/master/docs/ablation_RRSE.png)
-
-![](https://raw.githubusercontent.com/bighuang624/DSANet/master/docs/ablation_MAE.png)
-
-![](https://raw.githubusercontent.com/bighuang624/DSANet/master/docs/ablation_CORR.png)
+**Notice:** At present, we find that there are some bugs (presumably some problems left by the old version of pytorch-lightning) that make our code unable to run correctly on GPUs. You can currently run the code on the CPU as above.
 
 ## Citation
 
-If our codes are helpful for your research, please cite our paper:
+If our code is helpful for your research, please cite our paper:
 
 ```
 @inproceedings{Huang2019DSANet,
   author = {Huang, Siteng and Wang, Donglin and Wu, Xuehan and Tang, Ao},
   title = {DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting},
-  booktitle = {The 28th ACM International Conference on Information and Knowledge Management (CIKM ’19)},
+  booktitle = {The 28th ACM International Conference on Information and Knowledge Management (CIKM 2019)},
   month = {November},
   year = {2019},
   address = {Beijing, China}
 }
 ```
 
-ACM Reference Format: 
+## Acknowledgement
 
-Siteng Huang, Donglin Wang, Xuehan Wu, and Ao Tang. 2019. DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting. In The 28th ACM International Conference on Information and Knowledge Management (CIKM ’19), November 3–7, 2019, Beijing, China. ACM, New York, NY, USA, 4 pages. https://doi.org/10.1145/3357384.3358132
+Part of the code is heavily borrowed from [jadore801120/attention-is-all-you-need-pytorch](https://github.com/jadore801120/attention-is-all-you-need-pytorch).
