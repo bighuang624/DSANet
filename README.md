@@ -1,5 +1,7 @@
 # Dual Self-Attention Network for Multivariate Time Series Forecasting
 
+> **20.10.26 Update**: Due to the difficulty of installation and code maintenance caused by frequent updates of pytorch-lightning, and since we no longer focus on time series analysis, **we are sorry that we will no longer maintain the project**. We recommend you to refer to other similar applications of self-attention mechanism in time series, such as "[Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting](https://arxiv.org/abs/1907.00235)" and [https://github.com/maxjcohen/transformer](https://github.com/maxjcohen/transformer). Good luck.
+
 This project is the PyTorch implementation of the paper "[DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting](https://dl.acm.org/citation.cfm?doid=3357384.3358132)", in which we propose a dual self-attention network (DSANet) for multivariate time series forecasting. The network architecture is illustrated in the following figure, and more details about the effect of each component can be found in the paper.
 
 ![](https://raw.githubusercontent.com/bighuang624/DSANet/master/docs/DSANet-model-structure.png)
