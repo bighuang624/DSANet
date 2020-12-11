@@ -36,9 +36,9 @@ If our code is helpful for your research, please cite our paper:
 
 ```
 @inproceedings{Huang2019DSANet,
-  author = {Huang, Siteng and Wang, Donglin and Wu, Xuehan and Tang, Ao},
+  author = {Siteng Huang and Donglin Wang and Xuehan Wu and Ao Tang},
   title = {DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting},
-  booktitle = {The 28th ACM International Conference on Information and Knowledge Management (CIKM 2019)},
+  booktitle = {Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM 2019)},
   month = {November},
   year = {2019},
   address = {Beijing, China}
